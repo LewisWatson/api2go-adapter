@@ -13,4 +13,4 @@ All adapters got moved into the main repository and will only be updated there.
 #### Upgrade
 To Upgrade the gin-adapter from api2go-adapter simply install api2go with the build tag:
 
-`go get -tags=gingonic github.com/manyminds/api2go` and replace `gingonic.New(r)` with `routing.Gin(r)`
+`go get -tags=gingonic github.com/LewisWatson/api2go` and replace `gingonic.New(r)` with `routing.Gin(r)`

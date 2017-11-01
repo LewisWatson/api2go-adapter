@@ -1,6 +1,6 @@
 # Gorilla mux Router Adapter
 
-This adapter must be used in combination with [api2go](https://github.com/manyminds/api2go) in order to be useful.
+This adapter must be used in combination with [api2go](https://github.com/LewisWatson/api2go) in order to be useful.
 It allows you to use api2go within your [Gorilla mux](http://www.gorillatoolkit.org/pkg/mux) application.
 
 ## Example
@@ -10,8 +10,8 @@ package main
 
 import (
   "github.com/gorilla/mux"
-  "github.com/manyminds/api2go"
-  "github.com/manyminds/api2go-adapter/gorillamux"
+  "github.com/LewisWatson/api2go"
+  "github.com/LewisWatson/api2go-adapter/gorillamux"
   "net/http"
 )
 
@@ -25,7 +25,7 @@ func main() {
   )
 
   // Add your API resources here...
-  // see https://github.com/manyminds/api2go for more information
+  // see https://github.com/LewisWatson/api2go for more information
 
   r.HandleFunc("/ping", func(w http.ResponseWriter, r *http.Request) {
     w.WriteHeader(http.StatusOK)
